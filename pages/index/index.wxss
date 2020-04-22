@@ -1,0 +1,43 @@
+@import "../../iconfont.wxss"
+@import "../../main.wxss"
+@import "../../icon.wxss"
+/* 引入招工列表样式 */
+@import "../../css/work-list.wxss";
+/* 引入工人列表样式 */
+@import "../../css/worker-list.wxss";
+
+swiper {
+	height: 360rpx;
+}
+
+swiper image {
+	width: 100%;
+	height: 100%;
+}
+
+/* 宫格导航 */
+.grids {
+	display: flex;
+	font-size: 24rpx;
+	margin: 15rpx 0;
+	background-color: #eee;
+}
+.grids .item {
+	background-color: #fff;
+	align-items: center;
+	justify-content: center;
+	width: 25%;
+	height: 180rpx;
+	display: flex;
+	flex-direction: column;
+}
+.action {
+	width: 100%;
+	justify-content: space-between !important;
+}
+.action .right {
+	font-weight: 500;
+	color: #666;
+	display: flex;
+	align-items: center;
+}

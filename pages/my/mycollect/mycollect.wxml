@@ -1,0 +1,38 @@
+<!-- 引入日期时间格式化文件 -->
+<wxs module="dateUtil" src="../../../utils/timeUtil.wxs"></wxs>
+<van-tabs 
+	line-width="200" 
+	class='reset'
+	line-height='3' 
+	color="#1cbbb4"
+	active="{{ active }}" 
+	bind:change="onChange">
+	<van-tab title="收藏的招工">
+		<view class="list">
+			<view class="item" wx:for="{{myCollectWork}}">
+				<navigator hover-class="noshadow" url="../../work/detail/detail?id={{item.id}}">
+					<view>
+						<text>{{item.title}}</text>
+						<text>{{item.job}}</text>
+						<text>{{item.address}}</text>
+						<text>{{dateUtil.dateFormat(item.time)}}</text>
+					</view>
+				</navigator>
+			</view>
+		</view>
+	</van-tab>
+	<van-tab title="收藏的工作">
+		<view class="list">
+			<view class="item" wx:for="{{myCollectWorker}}">
+				<navigator hover-class="noshadow" url="../../worker/detail/detail?id={{item.id}}">
+					<view>
+						<text>{{item.name}}</text>
+						<text>{{item.job}}</text>
+						<text>{{item.address}}</text>
+						<text>{{dateUtil.dateFormat(item.time)}}</text>
+					</view>
+				</navigator>
+			</view>
+		</view>
+	</van-tab>
+</van-tabs>

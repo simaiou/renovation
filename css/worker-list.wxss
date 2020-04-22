@@ -1,0 +1,67 @@
+/* 工人列表 */
+.workerList .item {
+	padding: 0 20rpx;
+	background-color: #fff;
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 15rpx;
+}
+
+.workerList .item  .info {
+	border-bottom: 1rpx dashed #eee;
+	display: flex;
+	color: #555;
+	justify-content: center;
+	flex-direction: column;
+}
+
+.workerList .info .personal {
+	color: #333;
+	font-size: 36rpx;
+	padding: 20rpx 0 10rpx;
+	font-weight: bold;
+}
+
+.workerList .info .personal text {
+	margin-right: 10rpx;
+}
+
+/* 多行文本超出隐藏 */
+.workerList .info .detail{
+	padding: 10rpx 0;
+}
+.workerList .info .detail text {
+	font-size: 32rpx;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-line-clamp: 1;
+	-webkit-box-orient: vertical;
+}
+
+.workerList .info .job {
+	display: flex;
+}
+
+.workerList .info .job text {
+	font-size: 30rpx;
+	background-color: #eee;
+	
+}
+
+.workerList .addrTime {
+	font-size: 30rpx;
+	color: #555;
+	display: flex;
+	padding: 15rpx 0;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.cu-tag{
+	font-size: 32rpx;
+	line-height: 48rpx;
+	text-align: center;
+	padding: 0rpx 10rpx;
+}
+

@@ -1,0 +1,49 @@
+<!-- 引入手机号处理文件 -->
+<wxs module="telUtil" src="../../../utils/telFormat.wxs"></wxs>
+<!-- 引入日期格式化文件 -->
+<wxs module="dateUtil" src="../../../utils/timeUtil.wxs"></wxs>
+
+<view class="container">
+	<view class="header">
+		<text class="title">{{recruit.title}}</text>
+			<text class="salary">{{recruit.salary}}</text>
+		<text class="time">发布：{{dateUtil.dateFormat(recruit.time)}}</text>
+	</view>
+	<view class="intro">
+		<view class="contact">
+			<text class="con_person">联系人：</text>
+			<text class="con_name">{{recruit.contacts}}</text>
+		</view>
+		<view class="work">
+			<text decode="{{true}}" class="job">招&emsp;工：</text>
+			<text class="type">{{recruit.job}}</text>
+		</view>
+		<view class="tel">
+			<text decode="{{true}}" class="mob">电&emsp;话：</text>
+			<text wx:if="{{telFlag}}" class="number">{{telUtil.telFormat(recruit.tel) }}</text>
+			<text wx:else class="number">{{recruit.tel}}</text>
+			<text class="showTel" bind:tap='showTel' data-tel='{{recruit.tel}}'>{{telTip}} </text>
+		</view>
+	</view>
+	<view class="area" bind:tap="toNav"  data-location="{{recruit.location}}">
+		<view>
+			<text class="cuIcon-locationfill text-orange"></text>
+			<text>{{recruit.addName}}</text>
+		</view>
+			<van-icon size="14" name="arrow" color="#666" />
+	</view>
+	<view class="job-intro">工作介绍</view>
+	<view class="desc">{{recruit.details}}</view>
+</view>
+<view class="footer">
+	<view class="share">
+		<button class="btn-special" open-type="share">
+		  <i-icon size='26' type="send" />
+		</button>
+		<text>分享</text>
+	</view>
+	<view class="collect" bind:tap="collectWork">
+		<i-icon size='26' color="{{isCollect?'#1cbbb4':''}}" type="collection" />
+		<text>收藏</text>
+	</view>
+</view>

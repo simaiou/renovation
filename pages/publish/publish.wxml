@@ -1,0 +1,12 @@
+<view class="container">
+	<view class="work" bind:tap="toRecruit">
+		<span class="iconfont .icon-zhaogongren"></span>
+		<image src="../../images/zg.svg"></image>
+		<text>招工信息</text>
+	</view>
+	<view class="work" bind:tap="toSeekJob">
+		<i class="iconfont .icon-zhaogongren"></i>
+		<image src="../../images/gr.svg"></image>
+		<text>师傅找活</text>
+	</view>
+</view>

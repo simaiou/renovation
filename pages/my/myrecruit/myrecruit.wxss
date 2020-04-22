@@ -1,0 +1,63 @@
+.van-tab--active {
+	color: #1CBBB4 !important;
+}
+/* 重置底部条颜色 */
+.reset .van-tabs__line{
+	background-color: #1cbbb4;
+}
+.recruit-list .item{
+	padding: 20rpx;
+	background-color: #fff;
+	margin-top: 5rpx;
+}
+.recruit-list .item .info{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.info .info-left{
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+}
+.info .info-right{
+	margin-left: 20rpx;
+}
+.recruit-list .item .title{
+	font-size: 32rpx;
+	margin-bottom: 10rpx;
+	overflow: hidden;
+	color: #444;
+	font-weight: bold;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-line-clamp: 1;
+	-webkit-box-orient: vertical;
+}
+.recruit-list .item .time{
+	color: #ccc;
+	font-size: 24rpx;
+}
+.recruit-list .item .status-0{
+	color: rgb(69,185,124);
+	font-size: 30rpx;
+}
+.recruit-list .item .status-1{
+	color: #ccc;
+	font-size: 30rpx;
+}
+
+.cancel {
+	color: red !important;
+}
+/* 滑块样式 */
+.van-swipe-cell__right {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 65px;
+	font-size: 32rpx;
+	color: #fff;
+	text-align: center;
+	background-color: rgb(255,58,49);
+}

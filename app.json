@@ -1,0 +1,91 @@
+{
+	"pages": [
+		"pages/index/index",
+		"pages/work/work",
+		"pages/work/detail/detail",
+		"pages/worker/worker",
+		"pages/worker/detail/detail",
+		"pages/my/my",
+		"pages/my/mycard/mycard",
+		"pages/my/modify/modify",
+		"pages/my/mycollect/mycollect",
+		"pages/my/modify/detail/detail",
+		"pages/publish/publish",
+		"pages/recruit/recruit",
+		"pages/recruit/detail/detail",
+		"pages/seekjob/seekjob",
+		"pages/seekjob/detail/detail",
+		"pages/my/myrecruit/myrecruit",
+		"pages/login/login",
+		"pages/feedback/feedback"
+	],
+	"usingComponents": {
+		"van-button": "@vant/weapp/button/index",
+		"van-popup": "@vant/weapp/popup/index",
+		"van-checkbox": "@vant/weapp/checkbox/index",
+		"van-checkbox-group": "@vant/weapp/checkbox-group/index",
+		"van-cell": "@vant/weapp/cell/index",
+		"van-cell-group": "@vant/weapp/cell-group/index",
+		"van-dropdown-menu": "@vant/weapp/dropdown-menu/index",
+		"van-dropdown-item": "@vant/weapp/dropdown-item/index",
+		"van-tab": "@vant/weapp/tab/index",
+		"van-tabs": "@vant/weapp/tabs/index",
+		"van-icon": "@vant/weapp/icon/index",
+		"van-dialog": "@vant/weapp/dialog/index",
+		"van-swipe-cell": "@vant/weapp/swipe-cell/index",
+		"i-cell-group": "../../dist/cell-group/index",
+		"i-cell": "../../dist/cell/index",
+		"i-icon": "../../dist/icon/index"
+	},
+	"window": {
+		"backgroundTextStyle": "light",  
+		"backgroundColor": "#1cbbb4"  ,
+		"navigationBarBackgroundColor": "#1cbbb4",
+		"navigationBarTitleText": "招工平台"
+			
+	},
+	"tabBar": {
+		"color": "#999",
+		"selectedColor": "#444",
+		"backgroundColor": "#fff",
+		"borderStyle": "black",
+		"list": [{
+				"pagePath": "pages/index/index",
+				"text": "首页",
+				"iconPath": "/images/home.png",
+				"selectedIconPath": "/images/home-active.png"
+			},
+			{
+				"pagePath": "pages/work/work",
+				"text": "找活儿",
+				"iconPath": "/images/message.png",
+				"selectedIconPath": "/images/message-active.png"
+			},
+			{
+				"pagePath": "pages/publish/publish",
+				"text": "发布",
+				"iconPath": "/images/fabu.png",
+				"selectedIconPath": "/images/fabu.png"
+			},
+			{
+				"pagePath": "pages/worker/worker",
+				"text": "找工人",
+				"iconPath": "/images/profile.png",
+				"selectedIconPath": "/images/profile-active.png"
+			},
+			{
+				"pagePath": "pages/my/my",
+				"text": "我的",
+				"iconPath": "/images/profile.png",
+				"selectedIconPath": "/images/profile-active.png"
+			}
+		]
+	},
+	"sitemapLocation": "sitemap39.json",
+
+	"permission": {
+	    "scope.userLocation": {
+	      "desc": "您的位置信息将用于定位"
+	    }
+	  }
+}

@@ -1,0 +1,64 @@
+<!-- 引入日期格式化文件 -->
+<wxs module="dateUtil" src="../../../utils/timeUtil.wxs"></wxs>
+<!-- 弹窗 -->
+<van-dialog id="van-dialog" />
+<van-tabs color='#1CBBB4' 
+animated 
+active="{{ active }}" 
+line-width="200"
+class='reset'
+>
+	<van-tab title="正在招">
+		<view class="recruit-list">
+			<van-swipe-cell id="swipe-cell" 
+			wx:for="{{myRecruitList}}" 
+			wx:if="{{item.status===0}}" 
+			right-width="{{ 65 }}" 
+			async-close 
+			name="{{item.id}}"
+			bind:close="setStatu">
+				<van-cell-group>
+			<view class="item">
+				<navigator hover-class="noshadow" url="../../work/detail/detail?id={{item.id}}">
+				<view class="info">
+					<view class="info-left">
+						<text class="title">{{item.title}}</text>
+						<text class="time">{{dateUtil.dateFormat(item.time)}}</text>
+					</view>
+					<view class="info-right">
+						<text class="status-0">正在招</text>
+					</view>
+				</view>
+				</navigator>
+			</view>
+			</van-cell-group>
+				<view slot="right">招到了</view>
+			</van-swipe-cell>
+		</view>
+	</van-tab>
+	<van-tab title="已招到">
+		<view class="recruit-list">
+			<van-swipe-cell id="swipe-cell" wx:for="{{myRecruitList}}" 
+			wx:if="{{item.status===1}}" 
+			right-width="{{ 65 }}" 
+			async-close bind:close="delMyRecruit()">
+				<van-cell-group>
+			<view class="item" >
+				<navigator hover-class="noshadow" url="../../work/detail/detail?id={{item.id}}">
+				<view class="info">
+					<view class="info-left">
+						<text class="title">{{item.title}}</text>
+						<text class="time">{{dateUtil.dateFormat(item.time)}}</text>
+					</view>
+					<view class="info-right">
+						<text class="status-1">已招到</text>
+					</view>
+				</view>
+				</navigator>
+			</view>
+				</van-cell-group>
+				<view slot="right">删除</view>
+			</van-swipe-cell>		
+		</view>
+	</van-tab>
+</van-tabs>

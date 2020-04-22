@@ -1,0 +1,73 @@
+<!-- 发布招工 -->
+<view class="formBox">
+	<form>
+		<view class="cu-form-group margin-top">
+			<view class="title">姓名</view>
+			<input placeholder-class="placeholder-input" value="{{name}}" placeholder="请输入姓名" bindinput='nameInput'></input>
+		</view>
+		<view class="cu-form-group margin-top">
+			<view class="title">性别</view>
+			<picker class="{{sexIndex?'black':'gray'}}"  
+			bindchange="sexPickerChange" 
+			value="{{sexIndex}}" 
+			range="{{sexPicker}}">
+				<view  class="picker">
+					{{sexIndex?sexPicker[sexIndex]:'请选择性别'}}
+				</view>
+			</picker>
+		</view>
+		<view class="cu-form-group">
+			<view class="title">年龄</view>
+			<input placeholder-class="placeholder-input" type="number" value="{{age}}" maxlength="2" placeholder="请输入年龄" bindinput='ageInput'></input>
+		</view>
+		<view class="cu-form-group margin-top">
+			<view class="title">工种</view>
+			<input placeholder-class="placeholder-input" placeholder="请选择所需工种" value="{{result}}" disabled="disabled" bindtap='showPopup'></input>
+		</view>
+		<view class="cu-form-group">
+			<view class="title">工龄</view>
+			<input placeholder-class="placeholder-input"  value="{{seniority}}"  type="number" maxlength="2" placeholder="请输入工龄" bindinput='seniorityInput'></input>
+		</view>
+
+		<view class="cu-form-group">
+			<view class="title">熟练度</view>
+			<picker 
+			class="{{proIndex?'black':'gray'}}"
+			value="{{proIndex}}" 
+			range="{{proPicker}}"
+			bindchange="proPickerChange">
+				<view  class="picker">
+				{{proIndex?proPicker[proIndex]:'请选择熟练度'}}
+				</view>
+			</picker>
+		</view>
+
+		<view class="cu-form-group">
+			<view class="title">位置</view>
+			<input disabled placeholder-class="placeholder-input" value="{{addName}}" bindtap='chooseAddress' placeholder="请选择所在地区"></input>
+		</view>
+		<view class="cu-form-group">
+			<view class="title">电话</view>
+			<input placeholder-class="placeholder-input" value="{{tel}}" type="number" maxlength="11" placeholder="请输入电话" bindinput='telInput'></input>
+		</view>
+		<view class="cu-form-group">
+			<view class="title">自我介绍</view>
+			<input placeholder-class="placeholder-input" value="{{detail}}" disabled placeholder="请输入自我介绍" value="{{detail}}" bindtap="toDetail"></input>
+		</view>
+	</form>
+
+	<!-- 弹出层 -->
+	<van-popup catchtouchmove="ture" show="{{ show }}" duration="0" bind:close="onClose" custom-style="width: 80%">
+		<van-checkbox-group value="{{ result }}" bind:change="onChange">
+			<van-cell-group>
+				<van-cell wx:for="{{ list }}" wx:key="index" title="{{ item }}" value-class="value-class" clickable data-index="{{ index }}"
+				 bind:click="toggle">
+					<van-checkbox catch:tap="noop" class="checkboxes-{{ index }}" name="{{ item }}" />
+				</van-cell>
+			</van-cell-group>
+		</van-checkbox-group>
+	</van-popup>
+</view>
+<view class="btn">
+	<button class="submit" bind:tap="publishHandle">确认修改</button>
+</view>

@@ -1,0 +1,26 @@
+
+.container {
+	width: 100%;
+	display: flex;
+	position: fixed;
+	justify-content: center;
+	bottom: 200rpx;
+	flex-wrap: wrap;
+}
+
+.work {
+	margin-bottom: 50rpx;
+	justify-content: center;
+	align-items: center;
+	display: flex;
+	width: 40%;
+	flex-direction: column;
+	
+}
+
+.work image {
+	width: 120rpx;
+	height: 120rpx;
+	border-radius: 50%;
+	margin-bottom: 30rpx;
+}

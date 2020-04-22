@@ -1,0 +1,337 @@
+{
+	"description": "项目配置文件",
+	"packOptions": {
+		"ignore": []
+	},
+	"setting": {
+		"urlCheck": false,
+		"es6": true,
+		"postcss": true,
+		"preloadBackgroundData": false,
+		"minified": true,
+		"newFeature": true,
+		"coverView": true,
+		"nodeModules": true,
+		"autoAudits": false,
+		"showShadowRootInWxmlPanel": true,
+		"scopeDataCheck": false,
+		"checkInvalidKey": true,
+		"checkSiteMap": false,
+		"uploadWithSourceMap": true,
+		"babelSetting": {
+			"ignore": [],
+			"disablePlugins": [],
+			"outputPath": ""
+		}
+	},
+	"compileType": "miniprogram",
+	"libVersion": "2.10.2",
+	"appid": "wx5d240093636bb96f",
+	"projectname": "renovation",
+	"debugOptions": {
+		"hidedInDevtools": []
+	},
+	"isGameTourist": false,
+	"simulatorType": "wechat",
+	"simulatorPluginLibVersion": {},
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"currentL": -1,
+			"list": []
+		},
+		"gamePlugin": {
+			"current": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": -1,
+			"list": [
+				{
+					"id": -1,
+					"name": "pages/publish/publish",
+					"pathName": "pages/publish/publish",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/index/index",
+					"pathName": "pages/index/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/recruit/recruit",
+					"pathName": "pages/recruit/recruit",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/seekjob/seekjob",
+					"pathName": "pages/seekjob/seekjob",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/recruit/recruit",
+					"pathName": "pages/recruit/recruit",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/seekjob/seekjob",
+					"pathName": "pages/seekjob/seekjob",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/recruit/recruit",
+					"pathName": "pages/recruit/recruit",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/seekjob/seekjob",
+					"pathName": "pages/seekjob/seekjob",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/work/work",
+					"pathName": "pages/work/work",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/worker/worker",
+					"pathName": "pages/worker/worker",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/my/my",
+					"pathName": "pages/my/my",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/work/detail/detail",
+					"pathName": "pages/work/detail/detail",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/work/work",
+					"pathName": "pages/work/work",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/work/detail/detail",
+					"pathName": "pages/work/detail/detail",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/worker/detail/detail",
+					"pathName": "pages/worker/detail/detail",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/my/myrecruit/myrecruit",
+					"pathName": "pages/my/myrecruit/myrecruit",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/my/myrecruit/myrecruit",
+					"pathName": "pages/my/myrecruit/myrecruit",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/login/login",
+					"pathName": "pages/login/login",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/work/detail/detail",
+					"pathName": "pages/work/detail/detail",
+					"query": "83",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/work/detail/detail",
+					"pathName": "pages/work/detail/detail",
+					"query": "83",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/work/detail/detail",
+					"pathName": "pages/work/detail/detail",
+					"query": "84",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/work/detail/detail",
+					"pathName": "pages/work/detail/detail",
+					"query": "id=87",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/recruit/detail/detail",
+					"pathName": "pages/recruit/detail/detail",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/feedback/feedback",
+					"pathName": "pages/feedback/feedback",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/my/mycard/mycard",
+					"pathName": "pages/my/mycard/mycard",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 25,
+					"name": "pages/my/mycard/mycard",
+					"pathName": "pages/my/mycard/mycard",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/my/mycard/mycard",
+					"pathName": "pages/my/mycard/mycard",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/work/detail/detail",
+					"pathName": "pages/work/detail/detail",
+					"query": "117",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/work/detail/detail",
+					"pathName": "pages/work/detail/detail",
+					"query": "id=117",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/work/detail/detail",
+					"pathName": "pages/work/detail/detail",
+					"query": "id=117",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/worker/detail/detail",
+					"pathName": "pages/worker/detail/detail",
+					"query": "id=46",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/work/detail/detail",
+					"pathName": "pages/work/detail/detail",
+					"query": "id=117",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/worker/worker",
+					"pathName": "pages/worker/worker",
+					"query": "id=46",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/worker/detail/detail",
+					"pathName": "pages/worker/detail/detail",
+					"query": "id=46",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/worker/detail/detail",
+					"pathName": "pages/worker/detail/detail",
+					"query": "id=46",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/worker/detail/detail",
+					"pathName": "pages/worker/detail/detail",
+					"query": "id=46",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/work/detail/detail",
+					"pathName": "pages/work/detail/detail",
+					"query": "id=118",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/worker/detail/detail",
+					"pathName": "pages/worker/detail/detail",
+					"query": "id=46",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/my/mycollect/mycollect",
+					"pathName": "pages/my/mycollect/mycollect",
+					"query": "id=46",
+					"scene": null
+				}
+			]
+		}
+	}
+}

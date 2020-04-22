@@ -1,0 +1,5 @@
+miniprogram_npm/
+node_modules/
+dist/
+icon.wxss
+main.wxss

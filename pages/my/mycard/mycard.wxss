@@ -1,0 +1,67 @@
+@import  "../../../main.wxss";
+@import  "../../../icon.wxss";
+Page{
+	background-color: #fff;
+}
+.main{
+	margin: 20rpx;
+	box-shadow: 0rpx 0rpx 5rpx #ccc;
+
+}
+/* 信息 */
+.container{
+
+}
+.container .intro {
+	padding: 20rpx 0;
+	background-color: #fff;
+	font-size: 32rpx;
+	display: flex;
+	flex-direction: column;
+}
+
+.container .intro>view {
+	color: #333;
+	padding: 25rpx 30rpx;
+	display: flex;
+	align-items: center;
+	border-bottom: 1rpx solid #f6f6f6;
+}
+.container .intro>view:last-child{
+	border: 0;
+}
+.container .intro view text:nth-child(1) {
+	min-width: 120rpx;
+	color: #666;
+}
+
+.status{
+	border-bottom: 10rpx solid #f3f3f3;
+}
+.status .title{
+	font-weight: bold;
+}
+.switch-status{
+	display: flex;
+	align-items: center;
+	
+}
+.switch-status text{
+	margin-right: 20rpx;
+}
+.btn{
+	width: 100%;
+	position: fixed;
+	bottom: 0;
+}
+.submit{
+	border-radius: 0;
+	padding: 0;
+	margin: 0;
+	background-color: #1cbbb4;
+	width: 100%;
+	text-align: center;
+	color: #fff;
+	font-size: 38rpx;
+	font-weight: bold;
+}

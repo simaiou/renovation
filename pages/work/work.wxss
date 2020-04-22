@@ -1,0 +1,25 @@
+@import "../../icon.wxss";
+@import "../../main.wxss";
+@import "../../css/work-list.wxss";
+
+/* 固定头部 */
+.recruitList {
+	margin-top: 210rpx;
+}
+
+.header {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	height: 210rpx;
+	z-index: 999;
+}
+
+.noshadow {
+	hover-class: none;
+}
+
+/* 下拉菜单 */
+.van-dropdown-menu {
+	border-bottom: 1rpx solid #eee;
+}

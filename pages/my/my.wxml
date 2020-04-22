@@ -1,0 +1,62 @@
+<view class="main">
+	<view class="my">
+		<view class="bgc">
+			<view wx:if="{{userInfo.id}}" class="card">
+				<view class="user-info">
+					<image src="{{userInfo.avatar_url}}"></image>
+					<view class="user">
+						<text class="name">{{userInfo.nick_name}}</text>
+					</view>
+				</view>
+			</view>
+			<view wx:else class="card" bind:tap='toLogin'>
+				<view class="user-info">
+					<image src="../../images/avatar.jpg"></image>
+					<view class="user">
+						<text class="name">注册/登录</text>
+					</view>
+				</view>
+			</view>
+			<view class="zr">
+					<view class='container' wx:if="{{userInfo.id}}">
+						<view class="score-info">
+							<view class="score">
+								<text class="number">{{userInfo.mark}}</text>
+								<text>我的积分</text>
+							</view>
+							<view class="raking">
+								<text class="number">{{userInfo.ranking}}</text>
+								<text>排名点</text>
+							</view>
+						</view>
+					</view>
+					<view class="water">
+						<view class="water-c">
+							<view class="water-1 "> </view>
+							<view class="water-2 "> </view>
+						</view>
+					</view>
+				</view>
+		</view>
+	</view>
+			 <i-cell-group>
+			     <i-cell i-class="height" title="我发布的招工" is-link url="myrecruit/myrecruit">
+			 			 <i-icon slot="icon" type="activity" size="28" color="#1cbbb4" />
+			 		</i-cell>
+			     <i-cell i-class="height" title="我的找活信息" is-link url="mycard/mycard">
+			 			<i-icon slot="icon" type="barrage" size="28" color="#1cbbb4" />
+			 		</i-cell>
+					<i-cell i-class="height" title="我的收藏" is-link url="mycollect/mycollect" >
+						<i-icon slot="icon" type="collection" size="28" color="#1cbbb4" />
+					</i-cell>
+			     <i-cell i-class="height" title="邀请好友" is-link url="/pages/feedback/feedback" >
+			 			<i-icon slot="icon" type="share" size="28" color="#1cbbb4" />
+			 		</i-cell>
+			 		<i-cell i-class="height" title="反馈留言" is-link url="../feedback/feedback">
+			 			<i-icon slot="icon" type="editor" size="28" color="#1cbbb4" />
+			 		</i-cell>
+					<i-cell i-class="height" title="联系客服" is-link url="/pages/dashboard/index">
+						<i-icon slot="icon" type="emoji" size="28" color="#1cbbb4" />
+					</i-cell>
+			 </i-cell-group>
+</view>

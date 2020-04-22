@@ -1,0 +1,37 @@
+textarea {
+	border-radius: 10rpx;
+	margin: 20rpx auto;
+	padding: 20rpx;
+	width: 90%;
+	border: 1rpx solid #ccc;
+}
+
+.tip{
+	display: flex;
+	justify-content: flex-end;
+	
+}
+.tip text {
+	color: #ccc;
+	font-size: 14px;
+}
+.place-holder{
+	color: #888;
+}
+.btn{
+	width: 100%;
+	position: fixed;
+	bottom: 0;
+}
+.submit{
+	border-radius: 0;
+	padding: 0;
+	margin: 0;
+	background-color: #1cbbb4;
+	width: 100%;
+	text-align: center;
+	color: #fff;
+	font-size: 38rpx;
+	font-weight: bold;
+}
+

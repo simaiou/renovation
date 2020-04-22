@@ -1,0 +1,39 @@
+<!-- 引入日期时间格式化文件 -->
+<wxs module="dateUtil" src="../../utils/timeUtil.wxs"></wxs>
+<!-- 引入日期格式化文件 -->
+<wxs module="dayUtil" src="../../utils/date.wxs"></wxs>
+<view class="header">
+	<!-- 招工信息 -->
+	  <view class="cu-bar bg-cyan search">
+	    <view class="search-form radius">
+	      <text class="cuIcon-search"></text>
+	      <input type="text" placeholder="搜索招工信息" bindinput="searchChange" bindconfirm='search' confirm-type="search"></input>
+	    </view>
+	  </view>
+		<van-dropdown-menu catchtouchmove="true"   active-color="#ee0a24">
+		  <van-dropdown-item  bind:change='areaToggle'  value="{{ value1 }}" options="{{ option1 }}" />
+		  <van-dropdown-item bind:change='jobToggle' value="{{ value2 }}" options="{{ option2 }}" />
+			<van-dropdown-item bind:change='sortToggle' value="{{ value3 }}" options="{{ option3 }}" />
+		</van-dropdown-menu>
+</view>
+<!-- 招工列表 -->
+<view class="recruitList">
+	<view wx:for="{{recruitList}}" wx:key="id" class="item">
+		<navigator hover-class="noshadow" url="../work/detail/detail?id={{item.id}}">
+	<view class="title">
+		<text class="name">{{item.title}}</text>
+		<text class="salary">{{item.salary}}</text>
+	</view>
+		<view class="content">
+			<view class="info">
+				<text class="detail">{{item.details}}</text>
+			</view>
+		</view>
+		<view class="addrTime">
+			<text class="cuIcon-locationfill text-orange"></text>
+			<text class="address">{{item.addName}}</text>
+			<text class="time">{{dayUtil.dayFormat(dateUtil.dateFormat(item.time))}}</text>
+		</view>
+		</navigator>
+	</view>
+</view>

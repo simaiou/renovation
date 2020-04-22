@@ -1,0 +1,22 @@
+.van-tab--active {
+	color: #1CBBB4 !important;
+}
+.list{
+	padding: 0 20rpx;
+	padding-bottom: 50rpx;
+}
+.list .item{
+	border-radius: 10rpx;
+	background-color: #fff;
+	padding: 20rpx;
+	box-shadow: 0 0 20rpx #ccc;
+	margin-top: 10rpx;
+}
+.list .item view{
+	display: flex;
+	flex-direction: column;
+}
+/* 重置底部条颜色 */
+.reset .van-tabs__line{
+	background-color: #1cbbb4;
+}

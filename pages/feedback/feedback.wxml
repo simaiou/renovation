@@ -1,0 +1,14 @@
+<view class="container">
+	<view>
+		<textarea placeholder-class="place-holder" 
+		placeholder="你的问题和建议,是我们前进的动力" 
+		value="{{message}}" maxlength='300' 
+		bindinput='limit' />
+		<view class="tip"><text>{{current}} / {{max}} （最多可写300字）
+				</text>
+				</view>
+	</view>
+</view>
+<view class="btn">
+	<button  class="submit" bind:tap="submit">提交</button>
+</view>

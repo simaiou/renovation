@@ -1,0 +1,82 @@
+/* 招工列表 */
+.recruitList .item {
+	font-size: 24rpx;
+	padding: 0 20rpx;
+	background-color: #fff;
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 15rpx;
+}
+/* 招工标题 */
+.recruitList .item .title{
+	display: flex;
+	justify-content: space-between;
+		border-bottom: 1rpx dashed #eee;
+}
+
+.recruitList .item .title text {
+	font-size: 36rpx;
+	font-weight: bold;
+	color: #333;
+	display: block;
+	padding: 20rpx 0;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap
+}
+.recruitList .item .title .name{
+	flex: 6;
+}
+.recruitList .item .title .salary{
+	/* color: rgb(255,89,89); */
+	color: #1cbbb4;
+	font-size: 30rpx;
+}
+
+/* 招工内容 */
+.recruitList .item .content {
+	font-size: 32rpx;
+	padding: 10rpx 0;
+	display: flex;
+	border-bottom: 1rpx dashed #eee;
+	align-items: center;
+}
+
+/* 招工地址和日期 */
+.recruitList .item .content .info {
+	display: flex;
+	color: #555;
+	flex-direction: column;
+	
+}
+
+/* 多行文本超出隐藏 */
+.recruitList .item .content .info .detail {
+	color: #666;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-line-clamp: 2;
+	-webkit-box-orient: vertical;
+}
+
+/* 地址和时间 */
+.recruitList .addrTime {
+	font-size: 30rpx;
+	color: #555;
+	display: flex;
+	justify-content: space-between;
+	padding: 15rpx 0;
+	align-items: center;
+}
+/* 地点超出隐藏 */
+.recruitList .address {
+	flex: 3;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+.recruitList .time {
+	margin-left: 10rpx;
+}

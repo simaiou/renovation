@@ -1,0 +1,77 @@
+@import "../../main.wxss";
+@import "../../icon.wxss";
+Page{
+	background-color:#fff;
+}
+.cu-form-group .title {
+	min-width: 80px;
+	display: flex;
+	justify-content: flex-start;
+}
+/* 列表 */
+.cu-form-group{
+	min-height: 120rpx;
+}
+/* 列表选择器对齐方式 */
+.cu-form-group picker .picker {
+	text-align: right;
+}
+
+/* placeholder颜色 */
+.placeholder-input {
+	color: #ccc;
+	font-size: 32rpx;
+}
+/* input颜色 */
+.cu-form-group input {
+	font-size: 32rpx;
+	color: #111;
+	text-align: right;
+}
+/* 单选框重置样式 */
+.cu-form-group picker .picker{
+	text-align: right;
+}
+.cu-form-group picker{
+	padding-right: 20rpx;
+}
+.cu-form-group picker::after{
+display: none !important;
+}
+
+
+.formBox{
+	background-color: #fff;
+	padding: 10rpx;
+}
+.margin-top{
+	margin-top: 0;
+}
+.value-class {
+  flex: none !important;
+}
+.van-popup {
+	border-radius: 10rpx;
+}
+.btn{
+	width: 100%;
+	position: fixed;
+	bottom: 0;
+}
+.submit{
+	border-radius: 0;
+	padding: 0;
+	margin: 0;
+	background-color: #1cbbb4;
+	width: 100%;
+	text-align: center;
+	color: #fff;
+	font-size: 38rpx;
+	font-weight: bold;
+}
+.gray{
+	color: #ccc !important;
+}
+.black{
+	color: #111 !important;
+}

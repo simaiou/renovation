@@ -1,0 +1,17 @@
+<view class="container">
+	<view>
+		<textarea 
+		placeholder-class="place-holder" 
+		placeholder="请输入招工详情" 
+		maxlength='500' 
+		bindinput='limit' 
+		value="{{detail}}"
+		/>
+	</view>
+
+</view>
+<view class="btn">
+	<button  class="submit" bind:tap="submit">提交</button>
+</view>
+
+

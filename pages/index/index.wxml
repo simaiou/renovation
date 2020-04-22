@@ -1,0 +1,99 @@
+<!-- 引入日期时间格式化文件 -->
+<wxs module="dateUtil" src="../../utils/timeUtil.wxs"></wxs>
+<!-- 引入日期格式化文件 -->
+<wxs module="dayUtil" src="../../utils/date.wxs"></wxs>
+<!-- 轮播图 -->
+<swiper class="slides" circular autoplay="true" indicator-active-color="#fff" indicator-dots="false">
+	<swiper-item>
+		<image mode="aspectFill" src="../../images/slide1.png"></image>
+	</swiper-item>
+</swiper>
+<!-- 分类导航 -->
+<view class="grids">
+	<view class="item" bind:tap='toWork'>
+		<span class="iconfont icon-zhuangxiu-"></span>
+		<text>招工信息</text>
+	</view>
+	<view class="item" bind:tap='toWorker'> <text class="iconfont icon-gongren"></text>
+		<text>工人列表</text></view>
+	<view class="item"> <text class="iconfont icon-scheng"></text>
+		<text>商城</text>
+	</view>
+	<view class="item"> <text class="iconfont icon-shiming"></text>
+		<text>实名认证</text></view>
+</view>
+<!-- 最新招工信息 -->
+<view bind:tap="moreJob" style="margin-bottom: 15rpx;" class="cu-bar bg-white">
+	<view class="action">
+		<view>
+			<text class="cuIcon-title text-green"></text>
+			<text>最新招工信息</text>
+		</view>
+		<view class="right">
+			<text class="more">更多</text>
+			<i-icon type="enter" size='16' />
+		</view>
+	</view>
+</view>
+<!-- 招工列表 -->
+<view class="recruitList">
+	<view wx:for="{{recruitList}}" wx:key="id" class="item">
+		<navigator hover-class="noshadow" url="../work/detail/detail?id={{item.id}}">
+			<view class="title">
+				<text class="name">{{item.title}}</text>
+				<text class="salary">{{item.salary}}</text>
+			</view>
+			<view class="content">
+				<view class="info">
+					<text class="detail">{{item.details}}</text>
+				</view>
+			</view>
+			<view class="addrTime">
+				<text class="cuIcon-locationfill text-orange"></text>
+				<text class="address">{{item.addName}}</text>
+				<text class="time">{{dayUtil.dayFormat(dateUtil.dateFormat(item.time))}}</text>
+			</view>
+		</navigator>
+	</view>
+</view>
+<!-- 最新找活信息 -->
+<view bind:tap="moreWorker" style="margin-bottom: 15rpx;" class="cu-bar bg-white">
+	<view class="action">
+		<view>
+			<text class="cuIcon-title text-green"></text>
+			<text>最新找活信息</text>
+		</view>
+		<view class="right">
+			<text class="more">更多</text>
+			<i-icon type="enter" size='16' />
+		</view>
+	</view>
+</view>
+<!-- 工人列表 -->
+<view class="workerList">
+	<view wx:for="{{workerList}}" wx:key="id" class="item">
+		<navigator hover-class="noshadow" url="../worker/detail/detail?id={{item.id}}">
+				<view class="info">
+					<view class="personal">
+						<text class="name">{{item.name}}</text>
+						<!-- <text class="name">{{nameUtil.nameFormat(item.name,item.sex)}}</text> -->
+						<text class="sex">{{item.sex}}</text>
+						<text class="age">{{item.age}}岁</text>
+					</view>
+					<view class="job">
+						 <view class="cu-tag line-cyan">{{item.job}}</view>
+					</view>
+					<view class="detail">
+						<text>{{item.introduce}}</text>
+					</view>
+				</view>
+			<view class="addrTime">
+				<view>
+					<text class="cuIcon-locationfill text-orange"></text>
+					<text class="address">{{item.addName}}</text>
+				</view>
+				<text class="pro">{{item.proficiency}}</text>
+			</view>
+		</navigator>
+	</view>
+</view>

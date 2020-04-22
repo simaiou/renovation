@@ -1,0 +1,70 @@
+<!-- 引入日期格式化文件 -->
+<wxs module="dateUtil" src="../../../utils/timeUtil.wxs"></wxs>
+<!-- 引入手机号处理文件 -->
+<wxs module="telUtil" src="../../../utils/telFormat.wxs"></wxs>
+<view class="container">
+	<view class="header">
+		<view class="left">
+			<text class="title">{{seekJob.name}}</text>
+			<text class="time">发布：{{dateUtil.dateFormat(seekJob.time)}}</text>
+		</view>
+		<view class="right {{isPraise?'opacity-5':'opacity-9'}}" bind:tap="setWorkerPraise">
+			<view  class="praise">
+				<i-icon size='26' type="praise" />
+				<text class="count">{{praiseCount}}</text>
+			</view>
+		</view>
+	</view>
+	<view class="intro">
+		<view class="sex">
+			<text decode="{{true}}" class="mob">性&emsp;别：</text>
+			<text >{{seekJob.sex}}</text>
+		</view>
+		<view class="age">
+			<text decode="{{true}}" class="mob">年&emsp;龄：</text>
+			<text >{{seekJob.age}}岁</text>
+		</view>
+		<view class="tel">
+			<text decode="{{true}}" class="mob">电&emsp;话：</text>
+			<text wx:if="{{telFlag}}" class="number">{{telUtil.telFormat(seekJob.tel) }}</text>
+			<text wx:else class="number">{{seekJob.tel}}</text>
+			<text class="showTel" bind:tap='showTel' data-tel='{{seekJob.tel}}'>{{telTip}}</text>
+		</view>
+
+		<view class="work">
+			<text decode="{{true}}" class="job">工&emsp;种：</text>
+			<text class="type">{{seekJob.job}}</text>
+		</view>
+		<view class="work-age">
+			<text decode="{{true}}" class="job">工&emsp;龄：</text>
+			<text class="type">{{seekJob.seniority}}年</text>
+		</view>
+		<view class="proficiency">
+			<text class="job">熟练度：</text>
+			<text class="type">{{seekJob.proficiency}}</text>
+		</view>
+	</view>
+	<view class="area" bind:tap="toNav" data-location="{{seekJob.location}}">
+		<view>
+			<text class="cuIcon-locationfill text-orange"></text>
+			<text>{{seekJob.addName}}</text>
+		</view>
+			<van-icon size="14" name="arrow" color="#666" />
+	</view>
+	<view class="job-intro">自我介绍</view>
+	<view class="desc">{{seekJob.introduce}}</view>
+</view>
+<view class="footer">
+	<view class="share">
+		<button class="btn-special" open-type="share">
+		  <i-icon size='26' type="send" />
+		</button>
+		<text>分享</text>
+	</view>
+	<view class="collect" bind:tap="collectWorker">
+		<i-icon size='26' color="{{isCollect?'#1cbbb4':''}}" type="collection" />
+		<text>收藏</text>
+	</view>
+
+</view>
+

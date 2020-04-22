@@ -1,0 +1,12 @@
+var name={
+	nameFormat:function(name,sex){
+		if(sex=='男'){
+			return name.substring(0,1)+'先生'
+		}else if(sex=='女'){
+			return name.substring(0,1)+'女士'
+		}
+	}
+}
+module.exports={
+	nameFormat:name.nameFormat
+}

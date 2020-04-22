@@ -1,0 +1,10 @@
+// 只显示月日格式
+var filter = {
+	dateFormat: function(date) {
+		return date.toString().substring(5,10)
+	}
+}
+
+module.exports = {
+	dayFormat:filter.dateFormat
+}

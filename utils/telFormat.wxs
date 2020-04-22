@@ -1,0 +1,11 @@
+// 手机号打码
+var tel={
+	telFormat:function(tel){
+		if(tel){
+			return tel.substring(0,3)+"****"+tel.substring(7)
+		}
+	}
+}
+module.exports={
+	telFormat:tel.telFormat
+}
